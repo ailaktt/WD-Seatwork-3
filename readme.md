@@ -4,16 +4,17 @@
 
 <br />
 <div align="center">
-  <a href="https://github.com/zyx-0314/">
+  <a href="https://github.com/">
   <!-- TODO: If you want to add logo or banner you can add it here -->
-    <img src="./assets/img/nyebe_white.png" alt="Nyebe" width="130" height="100">
+    <img src="./assets/img/CAT THEME/Kyla Logo.png" alt="Kyla" width="130" height="100">
   </a>
 <!-- TODO: Change Title to the name of the title of your Project -->
-  <h3 align="center">Title</h3>
+  <h3 align="center">Seatwork 3: Headers and Footers Display Website</h3>
 </div>
 <!-- TODO: Make a short description -->
 <div align="center">
-  Short Description. (Optional)
+  Welcome to my "SW 3: Headers and Footers Display Website" by Kyla Deirdre C. Tan
+
 </div>
 
 <br />
@@ -57,20 +58,18 @@
 
 <!-- TODO: To be changed -->
 <!-- The following are just sample -->
-Description of the project in details.
-
-Guiding Question:
-- What is the project
-- Whats the purpose
-- What are key components
-- What technology used and how it is used
+  For this project we were tasked to design static and animated headers & footers.
+The theme that I chose is for the header is aligned to cats then for the footer it was
+random designs. The purpose of this project is for the students to explore the different kinds
+of design in CSS by applying it to headers and footers. One of the main things that i've learned
+is the use of Nested Specific, Nested Specific Class, Non-Nested Non-Specific Class, Nested Non-Specific Class, and lastly, Design with animation. The proect is made in Visual Studio Code with HTML and CSS languages.
 
 ### Key Components
 <!-- TODO: List of Key Components -->
 <!-- The following are just sample -->
-- MultiPage Website/Single Page Website
-- Parallax transition
-- Transactional
+- MultiPage Website
+- Header Components
+- Footer Components
 
 ### Technology
 <!-- TODO: List of Technology Used -->
@@ -117,4 +116,7 @@ WD-ProjectName
 <!-- TODO: Add References -->
 | Title | Purpose | Link |
 |-|-|-|
-| Sample Title | Sample purpose would be here like this and this is the example of what it is. | trykolang.com |
+| BOOTSTRAP ICONS | Used for icons in the nav bar and social media icons | https://icons.getbootstrap.com/ |
+| GOOGLE FONTS | Used the font Bebas Nueue for the design of the texts | https://fonts.google.com/specimen/Bebas+Neue?query=bebas |
+| UI SNIPPETS | Made as reference for some of the animations | https://ui-snippets.dev/ |
+

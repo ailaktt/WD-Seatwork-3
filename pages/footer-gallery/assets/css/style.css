@@ -2,76 +2,553 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 
-a {
+  }
+
+  a {
     text-decoration: none;
-}
+  }
 
-/* Dev */
-section.design-one,
-section.design-one * {
-    /* outline: 1px dashed black; */
-}
-
-/* Dep */
-
-body {
+  body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 200vh;
+    height: fit-content;
     width: 100vw;
     overflow-x: hidden;
-}
-
-section {
+    background-color: rgb(255, 253, 216);
+  }
+  
+  section {
     width: 100vw;
     padding: 1rem 5vw;
     display: flex;
     gap: 1rem;
     align-items: flex-end;
-}
+  }
 
-section.design-one {
+  /* Nested Specific */
+  footer.design-one {
+    width: 100vw;
     display: flex;
-    background: linear-gradient(75deg , rgb(159, 255, 159) 0%, rgb(219, 255, 219) 100% );
-    align-items: flex-start;
+    flex-direction: column; /* This stacks the icons-container and navigation vertically */
+    align-items: center; /* This centers them horizontally */
+    text-align: center;
+    padding: 10px;
+    background: rgb(182, 255, 156);
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.5);
+    margin: 0 auto;
+    max-width: 1300px; /* Optional: Limit the maximum width */
+    border: rgb(123, 255, 0) solid;
 
-    & .company-logo {
-        height: 50px;
-    }
-
-    & .social-media {
+    & > .navigation{
         display: flex;
         align-items: center;
-        justify-content: center;
-        height: 100%;
-        gap: .5rem;
-        height: 100%;
-
-        & i {
-            padding: .5rem;
-            border: 1px solid black;
-            border-radius: 50%;
-            height: 2.2rem;
-            width: 2.2rem;
-            transition: all .2s ease;
+        gap: 3rem;
+        margin-bottom: 20px;
         }
+
+        & > .navigation a {
+          display: flex;
+          align-items: center;
+          font-size: 17px;
+          color: rgb(0, 0, 0);
+          display: inline-block; /* Lays out the navigation links horizontally */
+          margin: 5px 1px;
+          font-family: 'Bebas Neue', sans-serif;
+        }
+        & > .navigation i {
+            display: flex;
+            align-items: center;
+            font-size: 35px;
+            color: rgb(81, 180, 95);
+            margin: 5px -5px;
+            padding: 10px; /* Adjust if necessary */
+            border-radius: 50%; /* Ensures circular shape */
+            background-color: #fff;
+            border: 2px solid rgb(81, 180, 95);
+            width: 50px; /* Ensure width and height are equal */
+            height: 50px; /* Ensure width and height are equal */
+            justify-content: center; /* Center the icon if using flex */
+          }
+
+      & > .copyright {
+        width: 100%;
+        text-align: center;
+        padding: 20px; /* Adjust padding as needed */
+        font-size: 0.7rem; 
+        color: #000000; 
+        background-color: rgb(98, 202, 112); 
+    
+      }
     }
 
-    & .content {
-        padding-right: 20rem;
+
+
+  /* Nested Specific Class */
+/* Corrected CSS without the '&' symbol for nesting */
+/* Base styling for the footer */
+.design-two {
+    background-color: #000000; /* Dark background */
+    color: #fff; /* White text color */
+    text-align: center; /* Center align everything */
+    padding: 10px 500px;
+  }
+  
+  /* Styling for paragraphs within .footer-text */
+  .design-two .footer-text .first,
+  .design-two .footer-text .second {
+    margin: 0; /* Remove default margin */
+    padding: 5px 0; /* Add some padding for spacing */
+    font-family: 'Bebas Neue', sans-serif;
+  }
+  
+  .design-two .footer-text .first {
+    font-size: 50px; /* Larger text for the first paragraph */
+    color:#ff006a;
+  }
+  
+  .design-two .footer-text .second {
+    font-size: 25px; /* Smaller text for the second paragraph */
+    color:#ff006a;
+  }
+  
+  /* Styling for icons within .footer-icons */
+  .design-two .footer-icons a {
+    color: #ffffff; /* Bootstrap primary color for icons */
+    margin: 0 12px; /* Spacing between icons */
+    font-size: 35px; /* Icon size */
+  }
+  
+  .design-two .footer-icons a:hover {
+    color:#ff006a; /* Darker shade on hover */
+  }
+  
+  /* Copyright text */
+  .design-two .copyright {
+    font-size: 14px;
+    margin-top: 20px; /* Spacing from the icons */
+    color:#ff006a;
+  }
+
+
+
+  /* Non-Nested Non-Specific Class */
+  .design-three {
+    display: flex;
+    align-self: center;
+    width: 90vw;
+    justify-content: center;
+    border-radius: 50px;
+    background-image: linear-gradient(180deg, rgb(234, 170, 255),rgb(255, 162, 210), rgb(255, 255, 194));
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.5);
+  }
+
+  .nav-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none; /* Optional: Removes underline from links */
+  }
+  
+  .nav-button img, .nav-button i {
+    margin-bottom: 1px; /* Adjust space between icon and text */
+  }
+
+  .design-three .navigation {
+    display: flex;
+    gap: 0.7rem;
+    align-items: center;
+    gap: 5rem;
+    
+  }
+  
+  .design-three .navigation .nav-button {
+    font-weight: 300;
+    font-size: 30px;
+    color: rgb(223, 3, 106);
+    text-shadow: 2px 2px 4px white;
+    font-family: 'Bebas Neue', sans-serif;
+  }
+
+  .paw-logo {
+    height: 120px;
+    margin-left: 70px;
+    margin-right: 70px;
+    filter: drop-shadow(0px 5px 5px rgb(0, 0, 0, 0.5));
+  }
+
+
+  /* Nested Non-Specific Class */
+  .design-four {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    width: 100vw;
+    padding: 1.5rem 0;
+    border: 2px rgb(52, 140, 255) solid;
+    background: rgb(168, 248, 255);
+    display: flex;
+    flex-direction: column;
+
+
+    & .gray-cat {
+      height: 70px;
+      filter: drop-shadow(0px 5px 5px rgba(37, 19, 96, 0.5));
+      margin-top: -20px;
     }
 
-    & .disclaimer {
-        font-size: .8rem;
-        width: 5vw;
+    & .navigation {
+      display: flex;
+      gap: 3rem;
+      margin-top: -50px;
+      margin-bottom: -10px;
+    }
+
+    & .navigation-content {
+      color: rgb(19, 143, 210);
+      font-weight: 500;
+      font-size: 25px;
+      font-family: 'Bebas Neue', sans-serif;
+    }
+
+  & .call-to-action {
+    background: rgb(19, 143, 210);
+    padding: 0.2rem 1rem;
+    border-radius: 5px;
+    color: white;
+    border: 2px solid white;
+    position: absolute;
+    right: 80px; /* Aligns to the right side of the .container */
+    top: 80px; /* Adjust this value to position vertically as needed */
+    margin-top: 0; /* Resetting previous margin */
+    margin-right: 0;
+  }
+   
+}
+
+
+  .design-five {
+    display: flex;
+    flex-direction: column;
+    /* position: fixed; */
+    left: 0;
+    height: 100vh;
+    justify-content: space-around;
+    background: rgb(255, 198, 239);
+    padding: 1rem 0;
+    align-items: center;
+    align-self: center;
+    filter: drop-shadow(0px 5px 5px rgb(0, 0, 0, 0.5));
+    border: rgb(255, 0, 115) solid;
+  
+    & .orange-cat {
+      height: 100px;
+      padding: 0.5rem;
+      filter: drop-shadow(0px 5px 5px rgb(0, 0, 0, 0.5));
+    }
+  
+    & i {
+      color: rgb(255, 0, 115);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-size: 30px;
+    }
+
+   & p {
+      text-align: center;
+      font-size: 18px;
+      font-family: 'Bebas Neue', sans-serif;
+      color: rgb(196, 20, 99);
+    }
+
+    & .navigation {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+
+
+
+  }
+
+  /* Design with animation */
+    /* Nested Specific */
+    footer.design-one-animation {
+      width: 100vw;
+      display: flex;
+      justify-content: space-between;
+      padding: 0.2rem 8vw;
+      background: rgb(182, 255, 156);
+      box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.5);
+      margin: 0 auto;
+      max-width: 1300px; /* Optional: Limit the maximum width */
+      border: rgb(123, 255, 0) solid;
+
+      & > img.calico-logo {
+        width: 70px;
+        align-items: left;
+        filter: drop-shadow(5px 5px 4px rgb(0, 0, 0, 0.5));
+        transition: all 0.2s ease-in;
+
+        &:hover {
+          transform: rotateZ(720deg) scale(1.5);
+
+        }
+      }
+
+      & > nav.navigation {
         display: flex;
         align-items: center;
-        height: 100%;
+        gap: 0;
+
+
+        & > a.navigation-content {
+
+      display: flex; /* Make the links flex containers */
+      align-items: center; /* Center the text vertically */
+      justify-content: center; /* Center the text horizontally */
+      font-weight: 600;
+      font-size: 1.5rem;
+      color: rgb(146, 16, 87);
+      font-family: 'Bebas Neue', sans-serif;
+      transition: all 0.3s ease-in;
+      padding: 0 1rem; /* Adjust padding for spacing */
+      height: 100%; /* Ensure the links span the full height of the navbar */
+      box-sizing: border-box; /* Include padding in the element's total width and height */
+      margin: 0; /* Remove margin */
+      border-radius: 0; /* Remove border-radius to ensure no gaps */
+      border: none;
+
+          &:hover {
+            background: rgb(247, 239, 198);
+          }
+
+        }
+      }
     }
 
+    /* Nested Specific Class */
+    .design-two-animation {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      padding: 0.2rem 5vw;
+      align-items: center;
+      background: rgb(255, 0, 162);
+      border: 5px dashed #a30047;
+      margin: 0 auto;
+      max-width: 1200px; /* Optional: Limit the maximum width */
 
-}
+      & > .kyla-logo {
+        height: 130px;
+        filter: drop-shadow(10px 5px 3px rgb(0, 0, 0, 0.5));
+        display: flex;
+        align-items: space-around;
+      }
+
+      & > .white-logo {
+        height: 130px;
+        filter: drop-shadow(10px 5px 3px rgb(0, 0, 0, 0.5));
+        display: flex;
+        align-items: right;
+      }
+
+      & > .navigation {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+
+        & > .navigation-content {
+          color: rgb(255, 255, 255);
+          font-weight: 600;
+          font-size: 15px;
+          text-shadow: 3px 1px 5px white;
+          font-family: 'PT Sans Narrow', sans-serif;
+          font-style: normal;
+          background: white;
+          padding: 0.5rem 1rem;
+          border-radius: 5px;
+          color: rgb(255, 0, 162);
+          text-shadow: 3px 1px 5px rgb(248, 115, 184);
+          transition: transform 250ms cubic-bezier(.2,.8,.4,1);
+
+          &:hover {
+          transform: scale(1.3);
+          }
+
+          &:active {
+          transform: scale(1);
+          }
+        }
+
+        & > .call-to-action {
+
+          background: rgb(255, 0, 162);
+          padding: 0.5rem 1rem;
+          border-radius: 5px;
+          color: white;
+          text-shadow: 3px 1px 5px rgb(248, 115, 184);
+          margin-left: 90px;
+          border: 3px solid white;
+          position: relative;
+          transition: transform 250ms cubic-bezier(.2,.8,.4,1);
+
+    &:hover {
+		transform: scale(1.5);
+	  }
+
+	  &:active {
+		transform: scale(1.5);
+	  }
+  }
+        }
+      }
+
+    /* Non-Nested Non-Specific Class */
+
+    .design-three-animation {
+      display: flex;
+      align-self: center;
+      width: 90vw;
+      justify-content: center;
+      border-radius: 50px;
+      background-image: linear-gradient(180deg, rgb(234, 170, 255),rgb(255, 162, 210), rgb(255, 255, 194));
+      box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.5);
+  
+    & .nav-button {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none; /* Optional: Removes underline from links */
+    }
+    
+    & .nav-button img, .nav-button i {
+      margin-bottom: 1px; /* Adjust space between icon and text */
+    }
+  
+    & .navigation {
+      display: flex;
+      gap: 0.7rem;
+      align-items: center;
+      gap: 5rem;
+      
+    }
+    
+    & .navigation .nav-button {
+      font-weight: 300;
+      font-size: 30px;
+      color: rgb(223, 3, 106);
+      text-shadow: 2px 2px 4px white;
+      font-family: 'Bebas Neue', sans-serif;
+    }
+  
+    & .paw-logo {
+      height: 120px;
+      margin-left: 70px;
+      margin-right: 70px;
+      filter: drop-shadow(0px 5px 5px rgb(0, 0, 0, 0.5));
+    }
+  }
+
+    /* Nested Non-Specific Class */
+    .design-four-animation {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 4rem;
+      width: 100vw;
+      padding: 1.5rem 0;
+      border: 2px rgb(52, 140, 255) solid;
+      background: rgb(168, 248, 255);
+      display: flex;
+      flex-direction: column;
+  
+  
+      & .gray-cat {
+        height: 70px;
+        filter: drop-shadow(0px 5px 5px rgba(37, 19, 96, 0.5));
+        margin-top: -20px;
+      }
+  
+      & .navigation {
+        display: flex;
+        gap: 3rem;
+        margin-top: -50px;
+        margin-bottom: -10px;
+      }
+  
+      & .navigation-content {
+        color: rgb(19, 143, 210);
+        font-weight: 500;
+        font-size: 25px;
+        font-family: 'Bebas Neue', sans-serif;
+      }
+  
+    & .call-to-action {
+      background: rgb(19, 143, 210);
+      padding: 0.2rem 1rem;
+      border-radius: 5px;
+      color: white;
+      border: 2px solid white;
+      position: absolute;
+      right: 80px; /* Aligns to the right side of the .container */
+      top: 80px; /* Adjust this value to position vertically as needed */
+      margin-top: 0; /* Resetting previous margin */
+      margin-right: 0;
+    }
+
+  }
+
+
+    .design-five-animation {
+      display: flex;
+      flex-direction: column;
+      /* position: fixed; */
+      left: 0;
+      height: 100vh;
+      justify-content: space-around;
+      background: rgb(255, 198, 239);
+      padding: 1rem 0;
+      align-items: center;
+      align-self: center;
+      filter: drop-shadow(0px 5px 5px rgb(0, 0, 0, 0.5));
+      border: rgb(255, 0, 115) solid;
+    
+      & .orange-cat {
+        height: 100px;
+        padding: 0.5rem;
+        filter: drop-shadow(0px 5px 5px rgb(0, 0, 0, 0.5));
+      }
+    
+      & i {
+        color: rgb(255, 0, 115);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 30px;
+      }
+  
+     & p {
+        text-align: center;
+        font-size: 18px;
+        font-family: 'Bebas Neue', sans-serif;
+        color: rgb(196, 20, 99);
+      }
+  
+      & .navigation {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+      }
+    }
