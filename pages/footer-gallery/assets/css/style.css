@@ -137,92 +137,97 @@
 
   /* Non-Nested Non-Specific Class */
   .design-three {
-    background-color: #f8f9fa; // Light background for the footer
-    padding: 20px 0;
-    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 200px;
+    background-color: #ff0080;
+  }
   
-    .paw-logo {
-      width: 50px; // Example size, adjust as needed
-      margin-bottom: 20px;
-    }
+  .left-section,
+  .right-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
   
-    .navigation {
-      margin: 10px 0;
+  .kyla-logo {
+    width: 70px;
+margin-top: -30px;
+margin-bottom: 15px;
+margin-left: -80px;
+align-self: flex-start;
+font-size: 50px;
+font-family: 'Bebas Neue', sans-serif;
+  }
   
-      .nav-button {
-        display: inline-block;
-        margin: 0 10px;
-        color: #007bff; // Bootstrap primary color
-        text-decoration: none;
+  .footer-navs {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+
+  }
   
-        &:hover {
-          color: #0056b3; // Darker on hover
-        }
+  .footer-navs p {
+    margin: 5px 0;
+    margin-left: -80px;
+    color: black;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Bebas Neue', sans-serif;
+  }
   
-        i {
-          margin-right: 5px;
-        }
-      }
-    }
+  .footer-icons {
+    display: flex;
+    justify-content: center;
+    align-self: flex-start;
+    font-size: 35px;
+    margin-top: 20px;
+    margin-left: -100px;
+    margin-bottom: -20px;
+    
+  }
   
-    .footer-icons {
-      a {
-        color: #007bff;
-        margin: 0 10px;
-  
-        &:hover {
-          color: #0056b3;
-        }
-  
-        i {
-          font-size: 24px;
-        }
-      }
-    }
+  .footer-icons a {
+    margin: 0 10px;
+    color: rgb(0, 0, 0);
   }
   
   .email-subscription {
-    padding: 20px 0;
-    background-color: #e9ecef; // Light gray background
-    margin-top: 20px;
-  
-    form {
-      display: inline-block;
-      text-align: left;
-  
-      label {
-        display: block;
-        margin-bottom: 5px;
-      }
-  
-      input[type="email"] {
-        margin: 10px 0;
-        padding: 5px;
-        width: 300px; // Adjust as needed
-      }
-  
-      .confirmation {
-        margin: 10px 0;
-  
-        input[type="checkbox"] {
-          margin-right: 5px;
-        }
-      }
-  
-      button {
-        padding: 5px 10px;
-        background-color: #007bff;
-        color: white;
-        border: none;
-        cursor: pointer;
-  
-        &:hover {
-          background-color: #0056b3;
-        }
-      }
-    }
-  }
+    margin-left: 600px;
+    padding: 20px;
+    background-color: #e9ecef;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
 
+  }
+  
+  .email-subscription label {
+    margin-bottom: 10px;
+  }
+  
+  .email-subscription input[type="email"],
+  .email-subscription input[type="checkbox"] {
+    margin-bottom: 10px;
+    padding: 5px;
+  }
+  
+  .email-subscription button {
+    padding: 5px 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .email-subscription button:hover {
+    background-color: #555;
+  }
+  
+  
+  
   /* Nested Non-Specific Class */
   .design-four {
     position: relative;
