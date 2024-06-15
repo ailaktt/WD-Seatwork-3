@@ -11,6 +11,11 @@
 <!-- TODO: Change Title to the name of the title of your Project -->
   <h3 align="center">Seatwork 3: Headers and Footers Display Website</h3>
 </div>
+<!-- Banner added here -->
+<div align="center">
+  <img src="./assets/img/CAT THEME/Pink Heart.jpg" alt="Banner Image" width="100%">
+</div>
+
 <!-- TODO: Make a short description -->
 <div align="center">
   Welcome to my project "SW 3: Headers and Footers Display Website" by Kyla Deirdre C. Tan
