@@ -7,13 +7,14 @@
   <a href="https://github.com/">
   <!-- TODO: If you want to add logo or banner you can add it here -->
     <img src="./assets/img/CAT THEME/Kyla Logo.png" alt="Kyla" width="130" height="100">
+    <img src="./assets/img/CAT THEME/Kyla Logo.png" alt="Kyla" width="150" height="150">
   </a>
 <!-- TODO: Change Title to the name of the title of your Project -->
   <h3 align="center">Seatwork 3: Headers and Footers Display Website</h3>
 </div>
 <!-- TODO: Make a short description -->
 <div align="center">
-  Welcome to my "SW 3: Headers and Footers Display Website" by Kyla Deirdre C. Tan
+  Welcome to my project "SW 3: Headers and Footers Display Website" by Kyla Deirdre C. Tan
 
 </div>
 
