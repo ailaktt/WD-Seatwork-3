@@ -137,50 +137,91 @@
 
   /* Non-Nested Non-Specific Class */
   .design-three {
-    display: flex;
-    align-self: center;
-    width: 90vw;
-    justify-content: center;
-    border-radius: 50px;
-    background-image: linear-gradient(180deg, rgb(234, 170, 255),rgb(255, 162, 210), rgb(255, 255, 194));
-    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.5);
-  }
-
-  .nav-button {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none; /* Optional: Removes underline from links */
+    background-color: #f8f9fa; // Light background for the footer
+    padding: 20px 0;
+    text-align: center;
+  
+    .paw-logo {
+      width: 50px; // Example size, adjust as needed
+      margin-bottom: 20px;
+    }
+  
+    .navigation {
+      margin: 10px 0;
+  
+      .nav-button {
+        display: inline-block;
+        margin: 0 10px;
+        color: #007bff; // Bootstrap primary color
+        text-decoration: none;
+  
+        &:hover {
+          color: #0056b3; // Darker on hover
+        }
+  
+        i {
+          margin-right: 5px;
+        }
+      }
+    }
+  
+    .footer-icons {
+      a {
+        color: #007bff;
+        margin: 0 10px;
+  
+        &:hover {
+          color: #0056b3;
+        }
+  
+        i {
+          font-size: 24px;
+        }
+      }
+    }
   }
   
-  .nav-button img, .nav-button i {
-    margin-bottom: 1px; /* Adjust space between icon and text */
-  }
-
-  .design-three .navigation {
-    display: flex;
-    gap: 0.7rem;
-    align-items: center;
-    gap: 5rem;
-    
-  }
+  .email-subscription {
+    padding: 20px 0;
+    background-color: #e9ecef; // Light gray background
+    margin-top: 20px;
   
-  .design-three .navigation .nav-button {
-    font-weight: 300;
-    font-size: 30px;
-    color: rgb(223, 3, 106);
-    text-shadow: 2px 2px 4px white;
-    font-family: 'Bebas Neue', sans-serif;
+    form {
+      display: inline-block;
+      text-align: left;
+  
+      label {
+        display: block;
+        margin-bottom: 5px;
+      }
+  
+      input[type="email"] {
+        margin: 10px 0;
+        padding: 5px;
+        width: 300px; // Adjust as needed
+      }
+  
+      .confirmation {
+        margin: 10px 0;
+  
+        input[type="checkbox"] {
+          margin-right: 5px;
+        }
+      }
+  
+      button {
+        padding: 5px 10px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        cursor: pointer;
+  
+        &:hover {
+          background-color: #0056b3;
+        }
+      }
+    }
   }
-
-  .paw-logo {
-    height: 120px;
-    margin-left: 70px;
-    margin-right: 70px;
-    filter: drop-shadow(0px 5px 5px rgb(0, 0, 0, 0.5));
-  }
-
 
   /* Nested Non-Specific Class */
   .design-four {
