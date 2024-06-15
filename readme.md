@@ -6,7 +6,6 @@
 <div align="center">
   <a href="https://github.com/">
   <!-- TODO: If you want to add logo or banner you can add it here -->
-    <img src="./assets/img/CAT THEME/Kyla Logo.png" alt="Kyla" width="130" height="100">
     <img src="./assets/img/CAT THEME/Kyla Logo.png" alt="Kyla" width="150" height="150">
   </a>
 <!-- TODO: Change Title to the name of the title of your Project -->
