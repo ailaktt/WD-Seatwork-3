@@ -38,6 +38,7 @@
     box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.5);
     margin: 0 auto;
     max-width: 1300px; /* Optional: Limit the maximum width */
+    border: rgb(123, 255, 0) solid;
   
     & > img.calico-logo {
       width: 70px;
@@ -77,8 +78,20 @@
     & > .kyla-logo {
       height: 130px;
       filter: drop-shadow(10px 5px 3px rgb(0, 0, 0, 0.5));
+      display: flex;
+      align-items: space-around;
     }
+
+    & > .white-logo {
+      height: 130px;
+      filter: drop-shadow(10px 5px 3px rgb(0, 0, 0, 0.5));
+      display: flex;
+      align-items: right;
+      transform: scaleX(-1);
   
+    }
+
+
     & > .navigation {
       display: flex;
       gap: 1rem;
@@ -87,23 +100,26 @@
       & > .navigation-content {
         color: rgb(255, 255, 255);
         font-weight: 600;
-        font-size: 1.4rem;
+        font-size: 15px;
         text-shadow: 3px 1px 5px white;
-        padding: 0.5rem 1rem;
         font-family: 'PT Sans Narrow', sans-serif;
         font-style: normal;
-   
-        
-        
-      }
-  
-      & > .call-to-action {
         background: white;
         padding: 0.5rem 1rem;
         border-radius: 5px;
         color: rgb(255, 0, 162);
+        text-shadow: 3px 1px 5px rgb(248, 115, 184);  
+      }
+  
+      & > .call-to-action {
+        
+        background: rgb(255, 0, 162);
+        padding: 0.5rem 1rem;
+        border-radius: 5px;
+        color: white;
         text-shadow: 3px 1px 5px rgb(248, 115, 184);
- 
+        margin-left: 90px;
+        border: 3px solid white;
       }
     }
   }
@@ -118,6 +134,19 @@
     background-image: linear-gradient(180deg, rgb(234, 170, 255),rgb(255, 162, 210), rgb(255, 255, 194));
     box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.5);
   }
+
+  .nav-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none; /* Optional: Removes underline from links */
+  }
+  
+  .nav-button img, .nav-button i {
+    margin-bottom: 1px; /* Adjust space between icon and text */
+  }
+
   .design-three .navigation {
     display: flex;
     gap: 0.7rem;
@@ -129,8 +158,8 @@
   .design-three .navigation .nav-button {
     font-weight: 300;
     font-size: 30px;
-    color: rgb(255, 255, 255);
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    color: rgb(223, 3, 106);
+    text-shadow: 2px 2px 4px white;
     font-family: 'Bebas Neue', sans-serif;
   }
 
@@ -140,6 +169,7 @@
     margin-right: 70px;
     filter: drop-shadow(0px 5px 5px rgb(0, 0, 0, 0.5));
   }
+
   
   /* Universal Class */
 
@@ -207,6 +237,7 @@
     align-items: center;
     align-self: center;
     filter: drop-shadow(0px 5px 5px rgb(0, 0, 0, 0.5));
+    border: rgb(255, 0, 115) solid;
   
     & .orange-cat {
       height: 100px;
@@ -218,13 +249,21 @@
       color: rgb(255, 0, 115);
       display: flex;
       flex-direction: column;
+      align-items: center;
+      font-size: 30px;
     }
-  
+
+   & p {
+      text-align: center;
+      font-size: 18px;
+      font-family: 'Bebas Neue', sans-serif;
+      color: rgb(196, 20, 99);
+    }
+
     & .navigation {
       display: flex;
       flex-direction: column;
-      gap: 4rem;
-      
+      gap: 2rem;
     }
 
 

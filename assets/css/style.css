@@ -56,7 +56,7 @@ body {
       height: 140px;
     }
 
-    & .Paw {
+    & .cat-paw {
         height: 70px;
       transition: all 0.2s ease;
     }
