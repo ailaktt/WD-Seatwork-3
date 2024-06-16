@@ -30,62 +30,70 @@
   }
 
   /* Nested Specific */
-  footer.design-one {
+  .design-one {
     width: 100vw;
     display: flex;
-    flex-direction: column; /* This stacks the icons-container and navigation vertically */
-    align-items: center; /* This centers them horizontally */
+    flex-direction: column;
+    align-items: center;
     text-align: center;
     padding: 10px;
     background: rgb(182, 255, 156);
-    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.5);
     margin: 0 auto;
     max-width: 1300px; /* Optional: Limit the maximum width */
-    border: rgb(123, 255, 0) solid;
-
-    & > .navigation{
-        display: flex;
-        align-items: center;
-        gap: 3rem;
-        margin-bottom: 20px;
-        }
-
-        & > .navigation a {
-          display: flex;
-          align-items: center;
-          font-size: 17px;
-          color: rgb(0, 0, 0);
-          display: inline-block; /* Lays out the navigation links horizontally */
-          margin: 5px 1px;
-          font-family: 'Bebas Neue', sans-serif;
-        }
-        & > .navigation i {
-            display: flex;
-            align-items: center;
-            font-size: 35px;
-            color: rgb(81, 180, 95);
-            margin: 5px -5px;
-            padding: 10px; /* Adjust if necessary */
-            border-radius: 50%; /* Ensures circular shape */
-            background-color: #fff;
-            border: 2px solid rgb(81, 180, 95);
-            width: 50px; /* Ensure width and height are equal */
-            height: 50px; /* Ensure width and height are equal */
-            justify-content: center; /* Center the icon if using flex */
-          }
-
-      & > .copyright {
-        width: 100%;
-        text-align: center;
-        padding: 20px; /* Adjust padding as needed */
-        font-size: 0.7rem; 
-        color: #000000; 
-        background-color: rgb(98, 202, 112); 
-    
-      }
-    }
-
-
+  }
+  
+  .design-one > .navigation {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    margin-bottom: 20px;
+  }
+  
+  .design-one > .navigation a {
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+    display: inline-block;
+    margin: 5px 1px;
+    font-family: 'Bebas Neue', sans-serif;
+  }
+  
+  .design-one > .navigation i {
+    display: flex;
+    align-items: center;
+    font-size: 35px;
+    color: rgb(81, 180, 95);
+    margin: 5px -5px;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 2px solid rgb(81, 180, 95);
+    width: 50px;
+    height: 50px;
+    justify-content: center;
+  }
+  
+  .footer {
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.7rem;
+    color: #ffffff;
+    background-color: rgb(98, 202, 112); /* Change this to your desired background color */
+    margin: 0;
+  }
+  
+  .footer-copyright {
+    width: 67.7%;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.7rem;
+    color: #ffffff;
+    background-color: rgb(41, 104, 49); /* Change this to your desired background color */
+    margin: 0;
+  }
+  
 
   /* Nested Specific Class */
 /* Corrected CSS without the '&' symbol for nesting */
@@ -99,7 +107,6 @@
   align-items: center; /* Center align all items */
   position: relative; /* Add relative positioning */
   margin-bottom: 30px;
-
 }
 
 .design-two .footer-text {
@@ -134,19 +141,23 @@
   align-items: center; /* Center the icons vertically */
   margin: 5px 0; /* Add some spacing above and below the icons */
   width: 100%; /* Ensure the flex container takes the full width */
+  margin-bottom: 30px;
 }
 
 .design-two .footer-icons a {
   color: #ffffff; /* Bootstrap primary color for icons */
   margin: 0 12px; /* Spacing between icons */
   font-size: 35px; /* Icon size */
-  margin-bottom: 30px;
+}
+
+.design-two .footer-icons a:hover {
+  color: #ff006a; /* Darker shade on hover */
 }
 
 .design-two .copyright-container {
   background-color: #333; /* Background color for the copyright container */
-  width: 100%; /* Ensure the container takes the full width */
-  padding: 10px 0; /* Padding for top and bottom */
+  width: calc(100% - 40px); /* Ensure the container takes the full width minus padding */
+  padding: 10px 20px; /* Padding for top and bottom */
   position: absolute; /* Position the container absolutely */
   bottom: 0; /* Align the container to the bottom of the footer */
   left: 0; /* Align the container to the left of the footer */
