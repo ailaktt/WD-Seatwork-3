@@ -89,49 +89,61 @@
 
   /* Nested Specific Class */
 /* Corrected CSS without the '&' symbol for nesting */
-/* Base styling for the footer */
 .design-two {
-    background-color: #000000; /* Dark background */
-    color: #fff; /* White text color */
-    text-align: center; /* Center align everything */
-    padding: 10px 500px;
-  }
-  
-  /* Styling for paragraphs within .footer-text */
-  .design-two .footer-text .first,
-  .design-two .footer-text .second {
-    margin: 0; /* Remove default margin */
-    padding: 5px 0; /* Add some padding for spacing */
-    font-family: 'Bebas Neue', sans-serif;
-  }
-  
-  .design-two .footer-text .first {
-    font-size: 50px; /* Larger text for the first paragraph */
-    color:#ff006a;
-  }
-  
-  .design-two .footer-text .second {
-    font-size: 25px; /* Smaller text for the second paragraph */
-    color:#ff006a;
-  }
-  
-  /* Styling for icons within .footer-icons */
-  .design-two .footer-icons a {
-    color: #ffffff; /* Bootstrap primary color for icons */
-    margin: 0 12px; /* Spacing between icons */
-    font-size: 35px; /* Icon size */
-  }
-  
-  .design-two .footer-icons a:hover {
-    color:#ff006a; /* Darker shade on hover */
-  }
-  
-  /* Copyright text */
-  .design-two .copyright {
-    font-size: 14px;
-    margin-top: 20px; /* Spacing from the icons */
-    color:#ff006a;
-  }
+  background-color: #000000; /* Dark background */
+  color: #fff; /* White text color */
+  text-align: center; /* Center align text */
+  padding: 40px 20px; /* Adjusted padding for better layout */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center align all items */
+}
+
+.design-two .footer-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center align text items */
+  margin-bottom: 20px; /* Spacing below the text */
+}
+
+.design-two .footer-text .first,
+.design-two .footer-text .second {
+  margin: 20px; /* Remove default margin */
+  padding: 5px 0; /* Add some padding for spacing */
+  font-family: 'Bebas Neue', sans-serif;
+}
+
+.design-two .footer-text .first {
+  font-size: 50px; /* Larger text for the first paragraph */
+  color: #ff006a;
+}
+
+.design-two .footer-text .second {
+  font-size: 25px; /* Smaller text for the second paragraph */
+  color: #ff006a;
+}
+
+.design-two .footer-icons {
+  display: flex;
+  justify-content: center; /* Center the icons horizontally */
+  align-items: center; /* Center the icons vertically */
+  margin: 20px 0; /* Add some spacing above and below the icons */
+  width: 100%; /* Ensure the flex container takes the full width */
+}
+
+.design-two .footer-icons a {
+  color: #ffffff; /* Bootstrap primary color for icons */
+  margin: 0 12px; /* Spacing between icons */
+  font-size: 35px; /* Icon size */
+}
+
+.design-two .copyright {
+  font-size: 14px;
+  margin-top: 20px; /* Spacing from the icons */
+  color: #ff006a;
+  text-align: center; /* Center align copyright text */
+}
+
 
 
 
@@ -153,19 +165,18 @@
   
   .kyla-logo {
     width: 70px;
-margin-top: -30px;
-margin-bottom: 15px;
-margin-left: -80px;
-align-self: flex-start;
-font-size: 50px;
-font-family: 'Bebas Neue', sans-serif;
+    margin-top: -30px;
+    margin-bottom: 15px;
+    margin-left: -80px;
+    align-self: flex-start;
+    font-size: 50px;
+    font-family: 'Bebas Neue', sans-serif;
   }
   
   .footer-navs {
     display: flex;
     flex-direction: column;
     align-self: flex-start;
-
   }
   
   .footer-navs p {
@@ -185,7 +196,6 @@ font-family: 'Bebas Neue', sans-serif;
     margin-top: 20px;
     margin-left: -100px;
     margin-bottom: -20px;
-    
   }
   
   .footer-icons a {
@@ -194,40 +204,47 @@ font-family: 'Bebas Neue', sans-serif;
   }
   
   .email-subscription {
-    margin-left: 600px;
-    padding: 20px;
-    background-color: #e9ecef;
+    margin-left: 700px;
+    padding: 30px;
+    background-color: #ffc3e6;
     flex-grow: 1;
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
-
+    align-items: flex-start;
   }
   
   .email-subscription label {
     margin-bottom: 10px;
+    font-family: 'Bebas Neue', sans-serif;
   }
   
-  .email-subscription input[type="email"],
+  .email-subscription input[type="email"] {
+    margin-bottom: 20px;
+    padding: 10px;
+    font-family: 'Bebas Neue', sans-serif;
+    width: 100%; /* Ensure the input field is responsive */
+  }
+  
   .email-subscription input[type="checkbox"] {
-    margin-bottom: 10px;
-    padding: 5px;
+    margin-bottom: 20px;
+    padding: 10px;
+    font-family: 'Bebas Neue', sans-serif;
+  }
+  
+  .email-subscription label[for="email"] {
+    font-size: 30px; /* Change this value to your desired font size */
   }
   
   .email-subscription button {
-    padding: 5px 10px;
-    background-color: #333;
+    padding: 5px 20px;
+    background-color: #ff0080;
     color: white;
     border: none;
     cursor: pointer;
+    font-size: 20px;
+    font-family: 'Bebas Neue', sans-serif;
   }
-  
-  .email-subscription button:hover {
-    background-color: #555;
-  }
-  
-  
-  
+
   /* Nested Non-Specific Class */
   .design-four {
     position: relative;
