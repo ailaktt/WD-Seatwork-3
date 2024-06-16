@@ -546,3 +546,523 @@
   margin-bottom: 5px;
   font-family: 'Bebas Neue', sans-serif;
 }
+
+/*ANIMATED*/
+
+  /* Nested Specific */
+  .design-one {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    background: rgb(208, 238, 197);
+    margin: 0 auto;
+    max-width: 1300px; /* Optional: Limit the maximum width */
+  }
+  
+  .design-one > .navigation {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    margin-bottom: 20px;
+  }
+  
+  .design-one > .navigation a {
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    color: rgb(255, 159, 215);
+    display: inline-block;
+    margin: 5px 1px;
+    font-family: 'Bebas Neue', sans-serif;
+  }
+  
+  .design-one > .navigation i {
+    display: flex;
+    align-items: center;
+    font-size: 35px;
+    color: rgb(255, 159, 215);
+    margin: 5px -5px;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 2px solid rgb(255, 159, 215);
+    width: 50px;
+    height: 50px;
+    justify-content: center;
+  }
+  
+  .footer {
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.7rem;
+    color: #ffffff;
+    background-color: rgb(255, 159, 215); /* Change this to your desired background color */
+    margin: 0;
+  }
+  
+  .footer-copyright {
+    width: 67.7%;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.7rem;
+    color: #ffffff;
+    background-color: rgb(255, 159, 215); /* Change this to your desired background color */
+    margin: 0;
+  }
+  
+
+  /* Nested Specific Class */
+/* Corrected CSS without the '&' symbol for nesting */
+.design-two {
+  background-color: #000000; /* Dark background */
+  color: #fff; /* White text color */
+  text-align: center; /* Center align text */
+  padding: 40px 20px; /* Adjusted padding for better layout */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center align all items */
+  position: relative; /* Add relative positioning */
+  margin-bottom: 30px;
+}
+
+.design-two .footer-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center align text items */
+  margin-bottom: 20px; /* Spacing below the text */
+  max-width: 80%; /* Limit the width of the text */
+  margin: 0 auto; /* Center the text horizontally */
+}
+
+.design-two .footer-text .first,
+.design-two .footer-text .second {
+  margin: 10px; /* Add margin for spacing */
+  padding: 5px 0; /* Add some padding for spacing */
+  font-family: 'Bebas Neue', sans-serif;
+}
+
+.design-two .footer-text .first {
+  font-size: 50px; /* Larger text for the first paragraph */
+  color: #ff006a;
+}
+
+.design-two .footer-text .second {
+  font-size: 25px; /* Smaller text for the second paragraph */
+  color: #ff006a;
+}
+
+.design-two .footer-icons {
+  display: flex;
+  justify-content: center; /* Center the icons horizontally */
+  align-items: center; /* Center the icons vertically */
+  margin: 5px 0; /* Add some spacing above and below the icons */
+  width: 100%; /* Ensure the flex container takes the full width */
+  margin-bottom: 30px;
+}
+
+.design-two .footer-icons a {
+  color: #ffffff; /* Bootstrap primary color for icons */
+  margin: 0 12px; /* Spacing between icons */
+  font-size: 35px; /* Icon size */
+}
+
+
+.design-two .copyright-container {
+  background-color: #333; /* Background color for the copyright container */
+  width: calc(100% - 40px); /* Ensure the container takes the full width minus padding */
+  padding: 10px 20px; /* Padding for top and bottom */
+  position: absolute; /* Position the container absolutely */
+  bottom: 0; /* Align the container to the bottom of the footer */
+  left: 0; /* Align the container to the left of the footer */
+  right: 0; /* Align the container to the right of the footer */
+}
+
+
+  /* Non-Nested Non-Specific Class */
+  .design-three {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 200px;
+    background-color: #ff0080;
+  }
+  
+  .left-section,
+  .right-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .kyla-logo {
+    width: 70px;
+    margin-top: -30px;
+    margin-bottom: 15px;
+    margin-left: -80px;
+    align-self: flex-start;
+    font-size: 50px;
+    font-family: 'Bebas Neue', sans-serif;
+  }
+  
+  .footer-navs {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+  }
+  
+  .footer-navs p {
+    margin: 5px 0;
+    margin-left: -80px;
+    color: black;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Bebas Neue', sans-serif;
+  }
+  
+  .footer-icons {
+    display: flex;
+    justify-content: center;
+    align-self: flex-start;
+    font-size: 35px;
+    margin-top: 20px;
+    margin-left: -100px;
+    margin-bottom: -20px;
+  }
+  
+  .footer-icons a {
+    margin: 0 10px;
+    color: rgb(0, 0, 0);
+  }
+  
+  .email-subscription {
+    margin-left: 700px;
+    padding: 30px;
+    background-color: #ffc3e6;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .email-subscription label {
+    margin-bottom: 10px;
+    font-family: 'Bebas Neue', sans-serif;
+  }
+  
+  .email-subscription input[type="email"] {
+    margin-bottom: 20px;
+    padding: 10px;
+    font-family: 'Bebas Neue', sans-serif;
+    width: 100%; /* Ensure the input field is responsive */
+  }
+  
+  .email-subscription input[type="checkbox"] {
+    margin-bottom: 20px;
+    padding: 10px;
+    font-family: 'Bebas Neue', sans-serif;
+  }
+  
+  .email-subscription label[for="email"] {
+    font-size: 30px; /* Change this value to your desired font size */
+  }
+  
+  .email-subscription button {
+    padding: 5px 20px;
+    background-color: #ff0080;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    font-family: 'Bebas Neue', sans-serif;
+  }
+
+
+
+  /* Nested Non-Specific Class */
+  .design-four-footer {
+    background: #fff9c5;
+    padding-top: 50px;
+    border: 2px solid #ff0080;
+  }
+  
+  .design-four-footer .container {
+    width: 1140px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .design-four-footer .footer-content {
+    width: 33.3%;
+  }
+  
+  .design-four-footer h3 {
+    font-size: 35px;
+    margin-bottom: 15px;
+    text-align: center;
+    font-family: 'Bebas Neue', sans-serif;
+    color: #ff0080;
+  }
+  
+  .design-four-footer .footer-content p {
+    width: 190px;
+    margin: auto;
+    padding: 7px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 20px;
+    color: black;
+  }
+  
+  .design-four-footer .footer-content ul {
+    text-align: center;
+  }
+  
+  .design-four-footer .list {
+    padding: 0;
+  }
+  
+  .design-four-footer .list li {
+    width: auto;
+    text-align: center;
+    list-style-type: none;
+    padding: 7px;
+    position: relative;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 20px;
+    color: black;
+  }
+
+  .design-four-footer .list a {
+    text-decoration: none;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 20px;
+    color: black;
+  }
+
+  .design-four-footer .list li::before {
+    content: '';
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 100%;
+    width: 0;
+    height: 2px;
+    background: #fffcd1;
+    transition-duration: .5s;
+  }
+
+  .design-four-footer .social-icons {
+    text-align: center;
+    padding: 0;
+  }
+
+  .design-four-footer .social-icons li {
+    display: inline-block;
+    text-align: center;
+    padding: 5px;
+  }
+
+  .design-four-footer .social-icons i {
+    color: #ff0077;
+    font-size: 35px;
+    font-family: 'Bebas Neue', sans-serif;
+  }
+
+  .design-four-footer .bottom-bar {
+    background: #ff0077;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 50px;
+  }
+
+  .design-four-footer .bottom-bar p {
+    color: #000000;
+    margin: 0;
+    font-size: 16px;
+    padding: 7px;
+    font-family: 'Bebas Neue', sans-serif;
+  }
+
+  .footer-search-form {
+    margin-top: 20px; /* Adds space between the icons and the search bar */
+    text-align: center; /* Centers the form elements */
+}
+
+.footer-search-form input[type="text"] {
+    padding: 5px;
+    margin-right: 10px; /* Adds space between the input field and the button */
+    border: 1px solid #ccc; /* Example styling, adjust as needed */
+}
+
+.footer-search-form button {
+    padding: 5px 10px;
+    border: none;
+    background-color: #ff0077; /* Example styling, adjust as needed */
+    color: white;
+}
+
+/* The footer is fixed to the bottom of the page */
+/* Static Design 5 */
+
+.footer-distributed {
+  background-color: #dabcf8;
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  font: bold 16px sans-serif;
+  padding: 50px 50px 60px 50px;
+  margin-top: 80px;
+}
+
+.footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right {
+  display: inline-block;
+  vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left {
+  width: 30%;
+}
+
+.footer-distributed h3 {
+  color: #ff00aa;
+  font: normal 36px 'Cookie', cursive;
+  margin: 0;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 50px;
+}
+
+
+.footer-distributed h3 span {
+  color: #5b158a;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 50px;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links {
+  color: #ff00aa;
+  font-size: 50x;
+  margin: 20px 0 12px;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 30px;
+}
+
+.footer-distributed .footer-links a {
+  display: inline-block;
+  line-height: 1.8;
+  text-decoration: none;
+  color: inherit;
+  font-family: 'Bebas Neue', sans-serif;
+}
+
+.footer-distributed .footer-company-name {
+  color: #5b158a;
+  font-size: 15px;
+  font-weight: normal;
+  margin: 0;
+  font-family: 'Bebas Neue', sans-serif;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center {
+  width: 35%;
+}
+
+.footer-distributed .footer-center i {
+  background-color: #5b158a;
+  color: #5b158a;
+  font-size: 50px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 42px;
+  margin: 10px 15px;
+  vertical-align: middle;
+  font-family: 'Bebas Neue', sans-serif;
+}
+
+.footer-distributed .footer-center i.fa-envelope {
+
+  line-height: 38px;
+
+}
+
+.footer-distributed .footer-center p {
+  display: inline-block;
+  color: #5b158a;
+  vertical-align: middle;
+  margin: 0;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 20px;
+}
+
+.footer-distributed .footer-center p span {
+  display: block;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 2;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 20px;
+}
+
+.footer-distributed .footer-center p a {
+  color: #ff00aa;
+  text-decoration: none;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 20px;
+}
+
+/* Footer Right */
+
+.footer-distributed .footer-right {
+  width: 30%;
+  
+}
+
+.footer-distributed .footer-company-about {
+  line-height: 20px;
+  color: #5b158a;
+  font-size: 13px;
+  font-weight: normal;
+  margin: 0;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 20px;
+}
+
+.footer-distributed .footer-company-about span {
+  display: block;
+  color: #ff00aa;
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  font-family: 'Bebas Neue', sans-serif;
+}
+
+.footer-distributed .footer-icons {
+  margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  background-color: #deacff;
+  border-radius: 2px;
+  font-size: 20px;
+  color: #5b158a;
+  text-align: center;
+  line-height: 35px;
+  margin-right: 3px;
+  margin-bottom: 5px;
+  font-family: 'Bebas Neue', sans-serif;
+}
