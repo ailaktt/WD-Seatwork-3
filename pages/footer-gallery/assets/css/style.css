@@ -97,6 +97,9 @@
   display: flex;
   flex-direction: column;
   align-items: center; /* Center align all items */
+  position: relative; /* Add relative positioning */
+  margin-bottom: 30px;
+
 }
 
 .design-two .footer-text {
@@ -104,11 +107,13 @@
   flex-direction: column;
   align-items: center; /* Center align text items */
   margin-bottom: 20px; /* Spacing below the text */
+  max-width: 80%; /* Limit the width of the text */
+  margin: 0 auto; /* Center the text horizontally */
 }
 
 .design-two .footer-text .first,
 .design-two .footer-text .second {
-  margin: 20px; /* Remove default margin */
+  margin: 10px; /* Add margin for spacing */
   padding: 5px 0; /* Add some padding for spacing */
   font-family: 'Bebas Neue', sans-serif;
 }
@@ -127,7 +132,7 @@
   display: flex;
   justify-content: center; /* Center the icons horizontally */
   align-items: center; /* Center the icons vertically */
-  margin: 20px 0; /* Add some spacing above and below the icons */
+  margin: 5px 0; /* Add some spacing above and below the icons */
   width: 100%; /* Ensure the flex container takes the full width */
 }
 
@@ -135,16 +140,18 @@
   color: #ffffff; /* Bootstrap primary color for icons */
   margin: 0 12px; /* Spacing between icons */
   font-size: 35px; /* Icon size */
+  margin-bottom: 30px;
 }
 
-.design-two .copyright {
-  font-size: 14px;
-  margin-top: 20px; /* Spacing from the icons */
-  color: #ff006a;
-  text-align: center; /* Center align copyright text */
+.design-two .copyright-container {
+  background-color: #333; /* Background color for the copyright container */
+  width: 100%; /* Ensure the container takes the full width */
+  padding: 10px 0; /* Padding for top and bottom */
+  position: absolute; /* Position the container absolutely */
+  bottom: 0; /* Align the container to the bottom of the footer */
+  left: 0; /* Align the container to the left of the footer */
+  right: 0; /* Align the container to the right of the footer */
 }
-
-
 
 
   /* Non-Nested Non-Specific Class */
